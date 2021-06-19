@@ -17,9 +17,9 @@ public class FirstTest {
         options.addArguments("headless");
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
-        driver.get("https://gmibank.com/");
+        driver.get("https://www.amazon.com/");
         System.out.println(driver.getTitle());
-        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("GMIBANK"));
+        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Amazon.com. Spend less. Smile more."));
         System.out.println("This browser is navigating to "+driver.getTitle());
     }
 
