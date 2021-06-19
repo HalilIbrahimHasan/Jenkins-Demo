@@ -21,6 +21,7 @@ public class FirstTest {
         System.out.println(driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Amazon.com"));
         System.out.println("This browser is navigating to "+driver.getTitle());
+        System.out.println("Batch 13 arkadaslarimiz icin bir Demo");
     }
 
 
