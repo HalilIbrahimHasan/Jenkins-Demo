@@ -22,8 +22,9 @@ public class FirstTest {
         driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
         driver.findElement(By.name("q")).sendKeys("iPhone"+ Keys.ENTER);
-        Assert.assertTrue(driver.getTitle().contains("iPhone"));
-        System.out.println("Ahmet abi calisma");
+        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
+        Assert.assertTrue(driver.getTitle().contains("iPhone1"));
+//        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
 //        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Amazon.com"));
 //        System.out.println("This browser is navigating to "+driver.getTitle());
 //        System.out.println("Batch 13 arkadaslarimiz icin bir Demo");
