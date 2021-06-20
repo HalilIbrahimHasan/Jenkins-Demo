@@ -19,8 +19,13 @@ public class FirstTest {
         options.addArguments("headless");
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
-        driver.get("https://gmibank.com");
-        System.out.println(driver.getTitle());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.get("https://qa-environment.resortsline.com");
+//        System.out.println(driver.getTitle());
 //        driver.findElement(By.name("q")).sendKeys("iPhone"+ Keys.ENTER);
 //        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
 //        Assert.assertTrue(driver.getTitle().contains("iPhone1"));
