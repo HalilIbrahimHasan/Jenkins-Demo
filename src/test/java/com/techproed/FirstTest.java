@@ -19,11 +19,11 @@ public class FirstTest {
         options.addArguments("headless");
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
-        driver.get("https://www.google.com");
+        driver.get("https://gmibank.com");
         System.out.println(driver.getTitle());
-        driver.findElement(By.name("q")).sendKeys("iPhone"+ Keys.ENTER);
-        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
-        Assert.assertTrue(driver.getTitle().contains("iPhone1"));
+//        driver.findElement(By.name("q")).sendKeys("iPhone"+ Keys.ENTER);
+//        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
+//        Assert.assertTrue(driver.getTitle().contains("iPhone1"));
 //        System.out.println("Ahmet abi calisma"+driver.getTitle().contains("iPhone"));
 //        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Amazon.com"));
 //        System.out.println("This browser is navigating to "+driver.getTitle());
