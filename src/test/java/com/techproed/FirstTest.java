@@ -24,14 +24,10 @@ public class FirstTest {
         driver = new ChromeDriver(options);
         driver.get("https://www.amazon.com");
         System.out.println("Title of the page is: " + driver.getTitle());
-        List <WebElement> allItems = driver.findElements(By.xpath("//header/div/div[4]/div[2]/div[2]/div/script/following::a"));
-        for (int i = 0; i < 8; i++) {
-            System.out.println("item "+(i+1)+" => "+allItems.get(i).getText());
-        }
+
 //        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
     }
 
 
 }
-
 
