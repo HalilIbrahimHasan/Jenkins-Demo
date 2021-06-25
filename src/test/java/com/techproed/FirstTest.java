@@ -25,6 +25,8 @@ public class FirstTest {
             driver = new ChromeDriver(options);
             driver.get("https://www.google.com");
             System.out.println("Title of the page is: " + driver.getTitle());
+            driver.findElement(By.xpath("//*[@title='Search']")).sendKeys("Ibrahim Kalin"+Keys.ENTER);
+
             Assert.assertTrue("This page is unexpected!",driver.getTitle().equals("Google"));
         }
 
