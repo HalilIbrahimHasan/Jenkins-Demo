@@ -18,7 +18,7 @@ public class FirstTest {
         @Test
         public void OpenBrowser()  {
             WebDriver driver;
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\sam\\Documents\\Selenium-Grid-Server\\chromedriver_win32\\chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("headless");
             options.addArguments("disable-gpu");
@@ -26,9 +26,7 @@ public class FirstTest {
             driver.get("https://www.google.com");
             System.out.println("Title of the page is: " + driver.getTitle());
             Assert.assertTrue("This page is unexpected!",driver.getTitle().equals("Google"));
-            System.out.println("6. proje grubu");
-
-            System.out.println("Today we are learning how to set Jenkins on the servers");
+            System.out.println("we have a successful path that will allow executions");
 
 
         }
